@@ -1,0 +1,50 @@
+/* Fuentes */
+.font-primary {
+    font-family: 'Jockey One', sans-serif;
+}
+
+.font-secondary {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Colores */
+:root {
+    --color-primary: #3a73b1; /* Azul */
+    --color-secondary: #6c757d; /* Gris */
+    --color-accent: #28a745; /* Verde */
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+
+.text-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.bg-accent {
+    background-color: var(--color-accent) !important;
+}
+
+.text-accent {
+    color: var(--color-accent) !important;
+}
+
+/* Iconos */
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
