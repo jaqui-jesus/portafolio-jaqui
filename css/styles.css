@@ -1,41 +1,49 @@
 /* Fuentes */
+:root {
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+}
+
 .font-primary {
-    font-family: 'Jockey One', sans-serif;
+    font-family: var(--font-primary);
 }
 
 .font-secondary {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-secondary);
 }
 
 /* Colores */
 :root {
-    --color-primary: #3a73b1; /* Azul */
-    --color-secondary: #6c757d; /* Gris */
-    --color-accent: #28a745; /* Verde */
+    --color-primary: #5485b9;
+    --color-secondary: #6c757d;
+    --color-accent: #28a745;
 }
 
-.bg-primary {
-    background-color: var(--color-primary) !important;
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary), #548554);
 }
 
-.text-primary {
-    color: var(--color-primary) !important;
+/* Estilos generales */
+body {
+    font-family: var(--font-secondary);
+    color: #333;
 }
 
-.bg-secondary {
-    background-color: var(--color-secondary) !important;
+h1, h2, h3 {
+    font-family: var(--font-primary);
+    color: var(--color-primary);
 }
 
-.text-secondary {
-    color: var(--color-secondary) !important;
+/* Sección de habilidades (Carrusel) */
+.carousel-item {
+    padding: 20px;
 }
 
-.bg-accent {
-    background-color: var(--color-accent) !important;
-}
-
-.text-accent {
-    color: var(--color-accent) !important;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    padding: 10px;
 }
 
 /* Iconos */
@@ -47,4 +55,53 @@
 
 .icon:hover {
     transform: scale(1.2);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Formulario de contacto */
+.contact .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.contact .form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Mensaje de confirmación */
+.confirmation-message {
+    color: var(--color-accent);
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Estilos para el ícono de GitHub en las tarjetas */
+.icon-small {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Sombreado personalizado para las tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
