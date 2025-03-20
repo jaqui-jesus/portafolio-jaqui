@@ -20,7 +20,8 @@
 }
 
 .bg-gradient-primary {
-    background: linear-gradient(135deg, var(--color-primary), #548554);
+    background: rgb(74, 160, 161);
+background: linear-gradient(0deg, rgb(65, 188, 190) 0%, rgb(211, 62, 174) 100%);
 }
 
 /* Estilos generales */
@@ -104,4 +105,23 @@ h1, h2, h3 {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Cambiar el color de los títulos e iconos */
+.card-title {
+    color:  #5485b9; /* Otro tono de azul */
+}
+
+.list-icon {
+    color: #5485b9; /* Otro tono de azul */
+    font-size: 1.2rem; /* Tamaño de los iconos */
+}
+ /* Estilos personalizados para la imagen */
+ .profile-img {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+}
+.profile-img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el mouse */
 }
